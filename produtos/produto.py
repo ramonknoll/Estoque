@@ -24,3 +24,12 @@ class Produto:
             "peso": self.peso,
             "codigo": self.codigo,
         }
+
+    def entrada(self, quant):
+        self.quantidade += quant
+
+    def retirada(self, quant):
+        if quant <= self.quantidade:
+            self.quantidade -= quant
+            return True
+        return False
