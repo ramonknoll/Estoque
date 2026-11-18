@@ -2,4 +2,6 @@ from produtos.almoxarifado import Almoxarifado
 
 almox = Almoxarifado()
 
-print(almox.contar_em_falta())
+p = almox.buscar("P002")
+print(p.nome, p.quantidade)
+print(almox.buscar("P999"))
